@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auth Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Authentication System</h1>
+
+<button onclick="show('exp1')">Login</button>
+<button onclick="show('exp2')">Protected Route</button>
+<button onclick="show('exp3')">RBAC</button>
+
+<!-- EXP 1 -->
+<div id="exp1" class="section">
+  <h2>Login Form</h2>
+  <input id="user" placeholder="Username">
+  <input id="pass" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <p id="loginStatus"></p>
+</div>
+
+<!-- EXP 2 -->
+<div id="exp2" class="section">
+  <h2>Protected Route</h2>
+  <button onclick="accessRoute()">Access Dashboard</button>
+  <p id="routeStatus"></p>
+</div>
+
+<!-- EXP 3 -->
+<div id="exp3" class="section">
+  <h2>Role-Based Access</h2>
+  <button onclick="adminPage()">Admin Page</button>
+  <button onclick="userPage()">User Page</button>
+  <p id="roleStatus"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
